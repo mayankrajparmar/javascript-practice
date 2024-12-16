@@ -20,6 +20,8 @@ const strs = ["flower", "flow", "flight"];
 
 var longestCommonPrefix = function (strs) {
   let arr = strs.sort();
+
+  // let arr = [];
   //   for (let i = 0; i < strs.length; i++) {
   //     if (arr.length == 0) {
   //       arr.push(strs[i]);
