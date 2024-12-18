@@ -27,15 +27,6 @@ var searchInsert = function (nums, target) {
   let low = 0;
   let high = nums.length - 1;
   let mid;
-  debugger;
-
-  if (nums[low] > target) {
-    return low;
-  }
-
-  if (nums[high] < target) {
-    return high + 1;
-  }
 
   while (high >= low) {
     mid = Math.floor((high + low) / 2);
