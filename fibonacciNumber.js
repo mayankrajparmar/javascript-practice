@@ -25,16 +25,16 @@ let n = 3;
 // 0 <= n <= 30
 
 var fib = function (n) {
-  debugger;
   function fibonacci(n) {
-    if (n === 1) {
-      return 0;
+    if (n == 1) {
+      return 1;
+    } else if(n==0){
+        return 0
     }
-    return n - 1 + fibonacci(n - 2);
+    return fibonacci(n - 1) + fibonacci(n - 2);
   }
-  let result = fibonacci(n);
 
-  return result;
+  return fibonacci(n);
 };
 
 console.log(fib(n));
